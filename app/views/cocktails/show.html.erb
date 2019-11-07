@@ -3,4 +3,10 @@
 <h4>Edit</h4>
 <h4>Delete</h4>
 <h2>Ingredients</h2>
+<ul>
+<% @doses.each do |dose| %>
+  <li><strong><%= dose.ingredient.name %></strong>:
+    <%= dose.description %></li>
+<% end %>
+</ul>
 <h4>Add an ingredient</h4>
